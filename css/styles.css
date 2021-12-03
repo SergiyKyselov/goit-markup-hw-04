@@ -73,6 +73,19 @@ ul {
   margin-right: 50px;
 }
 
+.header-icons {
+  fill: var(--navigation-btn-color);
+  margin-right: 10px;
+}
+.header-icons:hover,
+.header-icons:focus {
+  fill: var(--navigation-btn-color);
+}
+
+.header-icons {
+  fill: currentColor;
+}
+
 /* Основной блок */
 
 .hero-bg-temporary {
@@ -291,7 +304,6 @@ body {
   margin-left: 30px;
 }
 .photo-command-item {
-  height: 368px;
   background-color: var(--primary-white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -299,7 +311,7 @@ body {
 }
 
 .command-item-text {
-  padding: 30px px;
+  padding: 30px 32px;
 }
 
 .command-item-title {
@@ -316,7 +328,7 @@ body {
   line-height: 1.19;
   color: var(--primary-text-color);
   text-align: center;
-  margin: 0;
+  margin-bottom: 2px;
 }
 /* TEAM */
 
@@ -396,8 +408,11 @@ body {
 .footer-icons-case {
   width: 206px;
   height: 80px;
-  margin-top: 12px;
   margin-left: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  
 }
 
 .icon-case {
@@ -422,11 +437,13 @@ body {
   text-transform: uppercase;
   color: var();
   color: var(--secondary-color);
+  
 }
 
 .footer-list-icons {
   display: flex;
   justify-content: space-between;
+  
 }
 .footer-item-icons {
   width: 44px;
@@ -592,8 +609,24 @@ body {
 }
 
 .regular-clients-icon {
+  
+  fill: currentColor;
   fill: var(--icons-main-color);
 }
+
+.header-icons {
+  
+  fill: var(--icons-main-color);
+}
+.header-icons:hover,
+.header-icons:focus {
+  fill: var(--navigation-btn-color);
+}
+
+.header-icons {
+  fill: currentColor;
+}
+
 
 /* ПОРТФОЛИО */
 
@@ -622,12 +655,7 @@ body {
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.works-item:nth-child(3n) {
-  margin-right: 0px;
-}
-.works-item:nth-last-child(-n + 3) {
-  margin-bottom: 0px;
-}
+
 
 .works-container {
   width: 1200px;
